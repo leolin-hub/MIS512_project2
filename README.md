@@ -1,7 +1,10 @@
 # Database Project Final
-### Mini World
+## Mini World
+```
 此資料集主題為2022年美國國內航線詳盡資料，除了起飛降落資訊，也納入機場、飛機機種、起飛天氣資訊。
-### 資料集列表和欄位說明
+```
+## 資料集列表和欄位說明
+
 資料集來源：https://www.kaggle.com/datasets/jl8771/2022-us-airlines-domestic-departure-data?select=CompleteData.csv
 ```
 選取Completedata.csv和Stations.csv來作為匯入Oracle的資料表。
@@ -67,9 +70,11 @@ Stations囊括機場編號、所在城市、經緯度、海拔高度等欄位
     ● FAA：聯邦航空協會代碼，協助辨識機場、航線、飛機製造者
     ● MESONET_STATION：氣象網站
 ```
-### 將資料匯入Oracle
+## 將資料匯入Oracle
+```
 分別匯入Completedata.csv和Stations.csv這兩個資料集
 Completedata.csv初始筆數為692,8147，為了利於查詢，我們使用R語言以隨機抽取的方式篩選出最終為121,136筆。
 Stations.csv有376筆
 先新增兩個table分別對應兩資料集的欄位以及符合型態限制
 成功匯入資料
+```
