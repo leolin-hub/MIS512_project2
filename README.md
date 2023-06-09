@@ -3,7 +3,7 @@
 此資料集主題為2022年美國國內航線詳盡資料，除了起飛降落資訊，也納入機場、飛機機種、起飛天氣資訊。
 ### 資料集列表和欄位說明
 資料集來源：https://www.kaggle.com/datasets/jl8771/2022-us-airlines-domestic-departure-data?select=CompleteData.csv
-
+```
 選取Completedata.csv和Stations.csv來作為匯入Oracle的資料表。
 Completedata囊括起飛降落、機場、飛機機種、起飛天氣等欄位
     ● FL_DATE：飛行日期
@@ -50,6 +50,8 @@ Completedata囊括起飛降落、機場、飛機機種、起飛天氣等欄位
     ● CLOUD_COVER：雲量，分五個等級
     ● ACTIVE_WEATHER：
       分三類別，0(無天氣事件發生)、1(天氣事件存在)、2(劇烈天氣事件發生(火山灰、龍捲風))
+```
+```
 Stations囊括機場編號、所在城市、經緯度、海拔高度等欄位
     ● AIRPORT_ID：機場編號
     ● AIRPORT：機場代碼
@@ -64,7 +66,7 @@ Stations囊括機場編號、所在城市、經緯度、海拔高度等欄位
     ● IATA：國際航空運輸協會機場代碼
     ● FAA：聯邦航空協會代碼，協助辨識機場、航線、飛機製造者
     ● MESONET_STATION：氣象網站
-
+```
 ### 將資料匯入Oracle
 分別匯入Completedata.csv和Stations.csv這兩個資料集
 Completedata.csv初始筆數為692,8147，為了利於查詢，我們使用R語言以隨機抽取的方式篩選出最終為121,136筆。
